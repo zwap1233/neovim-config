@@ -70,10 +70,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 require("which-key").add({
 	{ "<leader>d", group = "+[D]ebuging" },
 	{ "<leader>m", group = "+[M]akefiles" },
+	{ "<leader>g", group = "+[G]it" },
 })
 
 -- set makefile keymaps
 vim.keymap.set("n", "<leader>mm", ":make<CR>", { desc = "[M]ake" })
 vim.keymap.set("n", "<leader>mc", ":make clean<CR>", { desc = "Make [C]lean" })
 vim.keymap.set("n", "<leader>mi", ":make install<CR>", { desc = "Make [I]nstall" })
-vim.keymap.set("n", "<leader>mt", ":make", { desc = "Make [T]arget" })
+vim.keymap.set("n", "<leader>mt", ":make<space>", { desc = "Make [T]arget" })

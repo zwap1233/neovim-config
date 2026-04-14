@@ -53,9 +53,7 @@ require("lazy").setup({
 
 	require("wouter.plugins.workspaces"),
 
-	require("wouter.plugins.dap"),
-	require("wouter.plugins.dap-ui"),
-	require("wouter.plugins.mason-nvim-dap"),
+	require("wouter.plugins.debug"),
 
 	-- NOTE: For more info
 	--
